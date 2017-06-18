@@ -1,0 +1,17 @@
+<falang type="contentelement">
+	<name>Solidres Tariffs</name>
+	<author>Solidres</author>
+	<version>1.9.6</version>
+	<description>Solidres content element file for Falang</description>
+	<copyright>Copyright (C) 2013 - 2017 Solidres. All Rights Reserved.</copyright>
+	<reference type="content">
+		<table name="sr_tariffs">
+			<field type="referenceid" name="id" translate="0">ID</field>
+			<field type="titletext" name="title" length="50" maxlength="255" translate="1">Title</field>
+			<field type="htmltext" name="description" translate="1">Description</field>
+		</table>
+	</reference>
+	<translationfilters>
+		<keyword>title</keyword>
+	</translationfilters>
+</falang>

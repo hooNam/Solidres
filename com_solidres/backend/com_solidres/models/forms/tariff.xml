@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id" type="text" default="0" label="SR_FIELD_ID_LABEL"
+			description="SR_FIELD_ID_DESC"
+			readonly="true" class="readonly" labelclass="control-label"/>
+
+        <field name="currency_id" label="SR_FIELD_TARIFF_CURRENCY_ID_LABEL"
+               description="SR_FIELD_TARIFF_CURRENCY_ID_DESC" labelclass="control-label"/>
+
+        <field name="customer_group_id" label="SR_FIELD_TARIFF_CUSTOMER_GROUP_ID_LABEL"
+               description="SR_FIELD_TARIFF_CUSTOMER_GROUP_ID_DESC" labelclass="control-label"/>
+
+        <field name="valid_from" type="text" class="datepicker valid-date inputbox"
+               default="" size="20" label="SR_FIELD_TARIFF_VALID_FROM_LABEL"
+               description="SR_FIELD_TARIFF_VALID_FROM_DESC" labelclass="control-label"/>
+
+        <field name="valid_to" type="text" class="datepicker valid-date inputbox"
+               default="" size="20" label="SR_FIELD_TARIFF_VALID_TO_LABEL"
+               description="SR_FIELD_TARIFF_VALID_TO_DESC" labelclass="control-label"/>
+
+        <field name="room_type_id" label="SR_FIELD_TARIFF_ROOM_TYPE_ID_LABEL"
+               description="SR_FIELD_TARIFF_ROOM_TYPE_ID_DESC" labelclass="control-label"/>
+
+        <field name="title" class="inputbox" type="text" label="SR_FIELD_TARIFF_TITLE_LABEL"
+               description="SR_FIELD_TARIFF_TITLE_DESC" labelclass="control-label"/>
+
+        <field name="description" class="inputbox" type="text" label="SR_FIELD_TARIFF_DESCRIPTION_LABEL"
+               description="SR_FIELD_TARIFF_DESCRIPTION_DESC" labelclass="control-label"/>
+
+		<field name="type" type="list"
+			label="SR_FIELD_TARIFF_TYPE_LABEL" description="SR_FIELD_TARIFF_TYPE_DESC"
+			class="inputbox" size="1" default="1" labelclass="control-label"
+		>
+			<option value="0">SR_FIELD_TARIFF_TYPE_PER_ROOM_PER_NIGHT</option>
+			<option value="1">SR_FIELD_TARIFF_TYPE_PER_PERSON_PER_NIGHT</option>
+		</field>
+
+		<field name="state" type="radio"
+			   label="SR_FIELD_TARIFF_STATE_LABEL" description="SR_FIELD_TARIFF_STATE_DESC"
+			   class="btn-group" default="0" labelclass="control-label"
+				>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+		<field name="limit_checkin" type="list"
+			   label="SR_FIELD_TARIFF_LIMIT_CHECKIN_LABEL" description="SR_FIELD_TARIFF_LIMIT_CHECKIN_DESC"
+			   class="inputbox" size="7" default="1" labelclass="control-label"
+			   multiple="true"
+				>
+			<option value="0">SUN</option>
+			<option value="1">MON</option>
+			<option value="2">TUE</option>
+			<option value="3">WED</option>
+			<option value="4">THU</option>
+			<option value="5">FRI</option>
+			<option value="6">SAT</option>
+		</field>
+
+		<field type="hidden" name="d_min" default="0" />
+		<field type="hidden" name="d_max" default="0" />
+		<field type="hidden" name="p_min" default="0" />
+		<field type="hidden" name="p_max" default="0" />
+        <field type="hidden" name="mode" default="0" />
+        <field type="hidden" name="d_interval" default="0" />
+
+	</fieldset>
+</form>

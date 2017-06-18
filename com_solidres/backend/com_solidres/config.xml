@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="component">
+        <field
+            name="default_gallery"
+            type="gallerylist"
+            addfieldpath="/administrator/components/com_solidres/models/fields"
+            default="simple_gallery"
+            label="SR_FIELD_DEFAULT_GALLERY"
+            description="SR_FIELD_DEFAULT_GALLERY_DESC" />
+
+		<field
+				name="date_format"
+				type="list"
+				default="d-m-Y"
+				label="SR_FIELD_DATE_FORMAT_LABEL"
+				description="SR_FIELD_DATE_FORMAT_DESC">
+			<option
+					value="d-m-Y">SR_DATE_FORMAT_0</option>
+            <option
+					value="d/m/Y">SR_DATE_FORMAT_1</option>
+			<option
+					value="d M Y">SR_DATE_FORMAT_2</option>
+			<option
+					value="d F Y">SR_DATE_FORMAT_3</option>
+			<option
+					value="D, d M Y">SR_DATE_FORMAT_4</option>
+			<option
+					value="l, d F Y">SR_DATE_FORMAT_5</option>
+			<option
+					value="Y-m-d">SR_DATE_FORMAT_6</option>
+			<option
+					value="m-d-Y">SR_DATE_FORMAT_7</option>
+			<option
+					value="m/d/Y">SR_DATE_FORMAT_8</option>
+			<option
+					value="M d, Y">SR_DATE_FORMAT_9</option>
+			<option
+					value="F d, Y">SR_DATE_FORMAT_10</option>
+			<option
+					value="D, M d, Y">SR_DATE_FORMAT_11</option>
+			<option
+					value="l, F d, Y">SR_DATE_FORMAT_12</option>
+		</field>
+
+        <field
+            name="availability_calendar_enable"
+            type="radio"
+            class="btn-group"
+            default="1"
+            label="SR_FIELD_AVAILABILITY_CALENDAR_ENABLE_LABEL"
+            description="SR_FIELD_AVAILABILITY_CALENDAR_ENABLE_DESC">
+            <option
+                    value="0">JNO</option>
+            <option
+                    value="1">JYES</option>
+        </field>
+
+        <field
+            name="availability_calendar_month_number"
+            type="text"
+            size="50"
+            default="6"
+            label="SR_FIELD_AVAILABILITY_CALENDAR_MONTH_NUMBER_LABEL"
+            description="SR_FIELD_AVAILABILITY_CALENDAR_MONTH_NUMBER_DESC" />
+
+		<field
+			name="datepicker_month_number"
+			type="text"
+			size="50"
+			default="3"
+			label="SR_FIELD_DATEPICKER_MONTH_NUMBER_LABEL"
+			description="SR_FIELD_DATEPICKER_MONTH_NUMBER_DESC" />
+
+        <field
+            name="min_days_book_in_advance"
+            type="text"
+            size="50"
+            default="0"
+            label="SR_FIELD_MIN_DAYS_BOOK_IN_ADVANCE_LABEL"
+            description="SR_FIELD_MIN_DAYS_BOOK_IN_ADVANCE_DESC" />
+
+        <field
+            name="max_days_book_in_advance"
+            type="text"
+            size="50"
+            default="0"
+            label="SR_FIELD_MAX_DAYS_BOOK_IN_ADVANCE_LABEL"
+            description="SR_FIELD_MAX_DAYS_BOOK_IN_ADVANCE_DESC" />
+
+        <field
+            name="min_length_of_stay"
+            type="text"
+            size="50"
+            default="1"
+            label="SR_FIELD_MIN_LENGTH_OF_STAY_LABEL"
+            description="SR_FIELD_MIN_LENGTH_OF_STAY_DESC" />
+
+        <field
+            name="child_max_age_limit"
+            type="text"
+            size="50"
+            default="17"
+            label="SR_FIELD_CHILD_MAX_AGE_LIMIT_LABEL"
+            description="SR_FIELD_CHILD_MAX_AGE_LIMIT_DESC" />
+
+        <field
+            name="show_solidres_copyright"
+            type="radio"
+            class="btn-group"
+            default="1"
+            label="SR_FIELD_SHOW_SOLIDRES_POWERED_BY_LABEL"
+            description="SR_FIELD_SHOW_SOLIDRES_POWERED_BY_DESC">
+            <option
+                    value="0">JNO</option>
+            <option
+                    value="1">JYES</option>
+        </field>
+
+		<field
+			name="show_price_with_tax"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="SR_FIELD_SHOW_PRICE_WITH_TAX_LABEL"
+			description="SR_FIELD_SHOW_PRICE_WITH_TAX_DESC">
+            <option
+					value="0">JNO</option>
+            <option
+					value="1">JYES</option>
+        </field>
+
+		<field
+			name="week_start_day"
+			type="list"
+			default="1"
+			label="SR_FIELD_WEEK_START_DAY_LABEL"
+			description="SR_FIELD_WEEK_START_DAY_DESC">
+            <option
+					value="0">SUN</option>
+            <option
+					value="1">MON</option>
+        </field>
+
+		<field
+			name="default_reservation_state"
+			type="list"
+			default="0"
+			label="SR_FIELD_DEFAULT_RESERVATION_LABEL"
+			description="SR_FIELD_DEFAULT_RESERVATION_DESC">
+            <option
+					value="0">SR_RESERVATION_STATE_PENDING_ARRIVAL</option>
+            <option
+					value="1">SR_RESERVATION_STATE_CHECKED_IN</option>
+			<option
+					value="2">SR_RESERVATION_STATE_CHECKED_OUT</option>
+            <option
+					value="3">SR_RESERVATION_STATE_CLOSED</option>
+			<option
+					value="4">SR_RESERVATION_STATE_CANCELED</option>
+            <option
+					value="5">SR_RESERVATION_STATE_CONFIRMED</option>
+			<option
+					value="-2">JTRASHED</option>
+        </field>
+
+		<field name="partner_user_groups" type="usergrouplist" default=""
+			   label="SR_FIELD_PARTNER_USER_GROUP_LABEL"
+			   description="SR_FIELD_PARTNER_USER_GROUP_DESC"
+			   multiple="true"
+			/>
+
+		<field name="customer_user_groups" type="usergrouplist" default="2"
+			   label="SR_FIELD_CUSTOMER_USER_GROUP_LABEL"
+			   description="SR_FIELD_CUSTOMER_USER_GROUP_DESC"
+			   multiple="true"
+				/>
+
+        <field name="employee_user_groups" type="usergrouplist" default=""
+               label="SR_FIELD_EMPLOYEE_USER_GROUP_LABEL"
+               description="SR_FIELD_EMPLOYEE_USER_GROUP_DESC"
+               multiple="true"
+        />
+
+		<field name="discount_pre_tax" type="radio"
+			   label="SR_FIELD_DISCOUNT_PRE_TAX_LABEL" description="SR_FIELD_DISCOUNT_PRE_TAX_DESC"
+			   class="btn-group" size="0" default="0" labelclass="control-label"
+				>
+                <option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+		<field name="enable_multilingual_mode" type="radio"
+			   label="SR_FIELD_ENABLE_MULTILINGUAL_MODE_LABEL" description="SR_FIELD_ENABLE_MULTILINGUAL_MODE_DESC"
+			   class="btn-group" size="0" default="0" labelclass="control-label"
+				>
+                <option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+		<field
+				name="default_reservation_no_room_state"
+				type="list"
+				default="4"
+				label="SR_FIELD_DEFAULT_RESERVATION_NO_ROOM_LABEL"
+				description="SR_FIELD_DEFAULT_RESERVATION_NO_ROOM_DESC">
+			<option
+					value="0">SR_RESERVATION_STATE_PENDING_ARRIVAL</option>
+			<option
+					value="1">SR_RESERVATION_STATE_CHECKED_IN</option>
+			<option
+					value="2">SR_RESERVATION_STATE_CHECKED_OUT</option>
+			<option
+					value="3">SR_RESERVATION_STATE_CLOSED</option>
+			<option
+					value="4">SR_RESERVATION_STATE_CANCELED</option>
+			<option
+					value="5">SR_RESERVATION_STATE_CONFIRMED</option>
+			<option
+					value="-2">JTRASHED</option>
+		</field>
+
+        <field name="enable_reservation_live_refresh" type="radio"
+               label="SR_FIELD_ENABLE_RESERVATION_LIVE_REFRESH_LABEL" description="SR_FIELD_ENABLE_RESERVATION_LIVE_REFRESH_DESC"
+               class="btn-group" size="0" default="1" labelclass="control-label"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="reservation_live_refresh_interval"
+            type="text"
+            size="50"
+            default="15"
+            label="SR_FIELD_RESERVATION_LIVE_REFRESH_INTERVAL_LABEL"
+            description="SR_FIELD_RESERVATION_LIVE_REFRESH_INTERVAL_DESC" />
+
+        <field name="show_login_box" type="radio"
+               label="SR_FIELD_SHOW_LOGIN_BOX_LABEL" description="SR_FIELD_SHOW_LOGIN_BOX_DESC"
+               class="btn-group" size="0" default="1" labelclass="control-label"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field name="enable_carousel_compat" type="radio"
+               label="SR_FIELD_ENABLE_CAROUSEL_COMPAT_LABEL" description="SR_FIELD_ENABLE_CAROUSEL_COMPAT_DESC"
+               class="btn-group" size="0" default="0" labelclass="control-label"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="google_map_api_key"
+            type="text"
+            default=""
+            label="SR_FIELD_GOOGLE_MAP_API_LABEL"
+            description="SR_FIELD_GOOGLE_MAP_API_DESC" />
+
+        <field name="ui_framework" type="list"
+               label="SR_FIELD_UI_FRAMEWORK_LABEL" description="SR_FIELD_UI_FRAMEWORK_DESC"
+               default="bs2" labelclass="control-label"
+        >
+            <option value="bs2">Bootstrap 2</option>
+            <option value="bs3">Bootstrap 3</option>
+        </field>
+        <field name="layout_style" type="list"
+               label="SR_FIELD_LAYOUT_STYLE_LABEL" description="SR_FIELD_LAYOUT_STYLE_DESC"
+               default="" labelclass="control-label"
+        >
+            <option value="">SR_LAYOUT_STYLE_1</option>
+            <option value="style2">SR_LAYOUT_STYLE_2</option>
+            <option value="style3">SR_LAYOUT_STYLE_3</option>
+        </field>
+		<field
+				name="alert_expired_session"
+				type="radio"
+				label="SR_ALERT_EXPIRED_SESSION_LABEL"
+                description="SR_ALERT_EXPIRED_SESSION_DESC"
+				class="btn-group btn-group-yesno"
+				default="0"
+				filter="uint">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+				name="alert_expired_minutes"
+				type="number"
+				label="SR_ALERT_EXPIRED_MINUTES_LABEL"
+				description="SR_ALERT_EXPIRED_MINUTES_DESC"
+				min="1"
+				default="5"
+				filter="uint"
+				showon="alert_expired_session:1"/>
+		<field
+				name="auto_reload_seconds"
+				type="number"
+				label="SR_AUTO_RELOAD_SECONDS_LABEL"
+				description="SR_AUTO_RELOAD_SECONDS_DESC"
+				min="0"
+				default="0"
+				filter="uint"
+				showon="alert_expired_session:1"/>
+        <field
+                name="enable_auto_scroll"
+                type="radio"
+                label="SR_ENABLE_AUTO_SCROLL_LABEL"
+                description="SR_ENABLE_AUTO_SCROLL_DESC"
+                class="btn-group btn-group-yesno"
+                default="1"
+                filter="uint">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	</fieldset>
+	<fieldset
+			name="tariff"
+			label="SR_CONFIG_TARIFF_LABEL"
+			description="SR_CONFIG_TARIFF_DESC"
+			>
+		<field name="show_frontend_tariffs" type="list"
+			   label="SR_FIELD_SHOW_FRONTEND_TARIFF_LABEL" description="SR_FIELD_SHOW_FRONTEND_TARIFF_DESC"
+			   class="" size="0" default="1" labelclass="control-label"
+				>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+				<option value="2">SR_FIELD_SHOW_FRONTEND_TARIFF_WHEN_CHECKED</option>
+			</field>
+
+		<field name="enable_adjoining_tariffs" type="radio"
+			   label="SR_FIELD_ENABLE_ADJOINING_TARIFFS_LABEL" description="SR_FIELD_ENABLE_ADJOINING_TARIFFS_DESC"
+			   class="btn-group" size="0" default="1" labelclass="control-label"
+				>
+                <option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+
+		<field name="adjoining_tariffs_show_desc" type="radio"
+			   label="SR_FIELD_ENABLE_ADJOINING_TARIFFS_SHOW_DESC_LABEL" description="SR_FIELD_ENABLE_ADJOINING_TARIFFS_SHOW_DESC_DESC"
+			   class="btn-group" size="0" default="1" labelclass="control-label"
+			   showon="enable_adjoining_tariffs:1"
+				>
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+		</field>
+
+		<field name="adjoining_tariffs_mode" type="list"
+			   label="SR_FIELD_ADJOINING_TARIFFS_MODE_LABEL" description="SR_FIELD_ADJOINING_TARIFFS_MODE_DESC"
+			   class="" size="" default="0" labelclass="control-label"
+			   showon="enable_adjoining_tariffs:1"
+				>
+				<option value="0">SR_ADJOINING_TARIFFS_MODE_0_NO_STAY_LENGTH_LIMIT</option>
+				<option value="1">SR_ADJOINING_TARIFFS_MODE_1_LOWEST</option>
+				<option value="2">SR_ADJOINING_TARIFFS_MODE_2_HIGHEST</option>
+			</field>
+
+		<field name="overlapping_tariffs_mode" type="list"
+			   label="SR_FIELD_OVERLAPPING_TARIFFS_MODE_LABEL" description="SR_FIELD_OVERLAPPING_TARIFFS_MODE_DESC"
+			   class="" size="" default="0" labelclass="control-label"
+				>
+				<option value="0">SR_OVERLAPPING_TARIFFS_MODE_0_ALL</option>
+				<option value="1">SR_OVERLAPPING_TARIFFS_MODE_1_LOWEST</option>
+				<option value="2">SR_OVERLAPPING_TARIFFS_MODE_2_HIGHEST</option>
+			</field>
+
+		<field name="child_room_cost_calc" type="list"
+			   label="SR_FIELD_CHILD_ROOM_COST_CALC_LABEL" description="SR_FIELD_CHILD_ROOM_COST_CALC_DESC"
+			   class="" size="" default="1" labelclass="control-label"
+				>
+				<option value="1">SR_CHILD_ROOM_COST_CALC_PER_AGE_RANGE</option>
+				<option value="0">SR_CHILD_ROOM_COST_CALC_PER_QUANTITY</option>
+			</field>
+	</fieldset>
+	<fieldset
+			name="currency"
+			addfieldpath="/administrator/components/com_solidres/models/fields"
+			label="SR_CONFIG_CURRENCY_LABEL"
+			description="SR_CONFIG_CURRENCY_DESC"
+			>
+	
+			<field
+				name="default_currency_id"
+				type="currency"
+				label="SR_CONFIG_DEFAULT_CURRENCY_LABEL"
+                description="SR_CONFIG_DEFAULT_CURRENCY_DESC"
+				class="inputbox"
+				filter="" />
+
+            <field name="currency_format_pattern" type="list" label="SR_FIELD_DEFAULT_CURRENCY_FORMAT_PATTERN"
+                   description="SR_FIELD_DEFAULT_CURRENCY_FORMAT_PATTERN_DESC"
+                   filter="intval" size="1" default="1" labelclass="control-label">
+                <option value="1">SR_CURRENCY_FORMAT_PATTERN_1</option>
+                <option value="2">SR_CURRENCY_FORMAT_PATTERN_2</option>
+                <option value="3">SR_CURRENCY_FORMAT_PATTERN_3</option>
+                <option value="4">SR_CURRENCY_FORMAT_PATTERN_4</option>
+                <option value="5">SR_CURRENCY_FORMAT_PATTERN_5</option>
+				<option value="6">SR_CURRENCY_FORMAT_PATTERN_6</option>
+                <option value="7">SR_CURRENCY_FORMAT_PATTERN_7</option>
+                <option value="8">SR_CURRENCY_FORMAT_PATTERN_8</option>
+                <option value="9">SR_CURRENCY_FORMAT_PATTERN_9</option>
+                <option value="10">SR_CURRENCY_FORMAT_PATTERN_10</option>
+			</field>
+
+            <field
+                name="number_decimal_points"
+                type="text"
+                label="SR_CONFIG_CURRENCY_NUMBER_DECIMAL_POINTS"
+                description="SR_CONFIG_CURRENCY_NUMBER_DECIMAL_POINTS_DESC"
+                class="inputbox"
+                filter="intval"
+                default="2"
+                />
+
+			<field
+					name="currency_code_symbol"
+					type="radio"
+					class="btn-group"
+					default="code"
+					label="SR_CURRENCY_SHOW_CODE_OR_SYMBOL_LABEL"
+					description="SR_CURRENCY_SHOW_CODE_OR_SYMBOL_DESC">
+				<option
+						value="code">SR_CURRENCY_CODE</option>
+				<option
+						value="sign">SR_CURRENCY_SYMBOL</option>
+			</field>
+            <field
+                    name="currency_channel"
+                    type="list"
+                    label="SR_FIELD_CURRENCY_CHANNEL_LABEL"
+                    description="SR_FIELD_CURRENCY_CHANNEL_DESC"
+                    default="ecb">
+                <option value="ecb">SR_CURRENCY_CHANNEL_ECB</option>
+                <option value="openexchangerates">SR_CURRENCY_CHANNEL_OPENEXCHANGERATES</option>
+            </field>
+            <field type="hint" description="SR_CURRENCY_CHANNEL_HINT" />
+		    <field
+				name="open_channel_key"
+				label="SR_FIELD_CURRENCY_CHANNEL_API_KEY"
+				showon="currency_channel:openexchangerates"
+				class="input-xxlarge"/>
+    </fieldset>
+    <fieldset
+        name="media"
+        addfieldpath="/administrator/components/com_solidres/models/fields"
+        label="SR_CONFIG_MEDIA_LABEL"
+        description="SR_CONFIG_MEDIA_DESC"
+    >
+        <field name="thumb_sizes"
+            type="textarea"
+            label="SR_CONFIG_MEDIA_THUMB_SIZES_LABEL"
+            description="SR_CONFIG_MEDIA_THUMB_SIZES_DESC"
+            default="300x250&#13;&#10;75x75"
+            filter="raw"
+            rows="5"
+        />
+
+        <field name="asset_thumb_small"
+               type="thumbsizes"
+               label="SR_CONFIG_MEDIA_ASSET_THUMB_SMALL_LABEL"
+               description="SR_CONFIG_MEDIA_ASSET_THUMB_SMALL_DESC"
+               default="75x75"/>
+
+        <field name="asset_thumb_medium"
+               type="thumbsizes"
+               label="SR_CONFIG_MEDIA_ASSET_THUMB_MEDIUM_LABEL"
+               description="SR_CONFIG_MEDIA_ASSET_THUMB_MEDIUM_DESC"
+               default="300x250"/>
+
+        <field name="asset_thumb_large"
+               type="thumbsizes"
+               label="SR_CONFIG_MEDIA_ASSET_THUMB_LARGE_LABEL"
+               description="SR_CONFIG_MEDIA_ASSET_THUMB_LARGE_DESC"
+               default="300x250"/>
+
+        <field name="roomtype_thumb_small"
+               type="thumbsizes"
+               label="SR_CONFIG_MEDIA_ROOMTYPE_THUMB_SMALL_LABEL"
+               description="SR_CONFIG_MEDIA_ROOMTYPE_THUMB_SMALL_DESC"
+               default="75x75"/>
+
+        <field name="roomtype_thumb_medium"
+               type="thumbsizes"
+               label="SR_CONFIG_MEDIA_ROOMTYPE_THUMB_MEDIUM_LABEL"
+               description="SR_CONFIG_MEDIA_ROOMTYPE_THUMB_MEDIUM_DESC"
+               default="300x250"/>
+
+        <field name="roomtype_thumb_large"
+               type="thumbsizes"
+               label="SR_CONFIG_MEDIA_ROOMTYPE_THUMB_LARGE_LABEL"
+               description="SR_CONFIG_MEDIA_ROOMTYPE_THUMB_LARGE_DESC"
+               default="300x250"/>
+
+    </fieldset>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			component="com_solidres"
+			section="component">
+			
+		</field>
+	</fieldset>
+    <fieldset
+			name="Invoice"
+			label="PLG_SOLIDRES_INVOICE_TAB_LABEL"
+			description="PLG_SOLIDRES_INVOICE_TAB_DESC"
+			>
+        <field
+				name="enable_pdf_attachment"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="PLG_SOLIDRES_INVOICE_PDF_ATTACHMENT_LABEL"
+				description="PLG_SOLIDRES_INVOICE_PDF_ATTACHMENT_DESC">
+            <option
+					value="0">JNO</option>
+            <option
+					value="1">JYES</option>
+        </field>
+
+        <field name="solidres_invoice_number_prefix" type="text"
+			   default="INV"
+			   description="PLG_SOLIDRES_INVOICE_NUMBER_PREFIX_DESC"
+			   label="PLG_SOLIDRES_INVOICE_NUMBER_PREFIX_LABEL"
+				/>
+        <field name="solidres_invoice_number_prefix_override" type="text"
+			   default=""
+			   description="PLG_SOLIDRES_INVOICE_NUMBER_PREFIX_OVERRIDE_DESC"
+			   label="PLG_SOLIDRES_INVOICE_NUMBER_PREFIX_OVERRIDE_LABEL"
+				/>
+        <field name="solidres_invoice_number_digit" type="text"
+			   default="00"
+			   description="PLG_SOLIDRES_INVOICE_NUMBER_DIGIT_DESC"
+			   label="PLG_SOLIDRES_INVOICE_NUMBER_DIGIT_LABEL"
+				/>
+        <field name="solidres_invoice_number_start" type="text"
+			   default="1"
+			   description="PLG_SOLIDRES_INVOICE_NUMBER_START_DESC"
+			   label="PLG_SOLIDRES_INVOICE_NUMBER_START_LABEL"
+			   />
+        <field name="solidres_invoice_number_override" type="text"
+			   default=""
+			   description="PLG_SOLIDRES_INVOICE_NUMBER_OVERRIDE_DESC"
+			   label="PLG_SOLIDRES_INVOICE_NUMBER_OVERRIDE_LABEL"
+			   />
+
+        <field type="spacer" name="myspacer"  label="PDF&lt;hr/&gt;" />
+        <field name="solidres_invoice_pdf_title" type="text"
+			   default="invoice"
+			   description="PLG_SOLIDRES_INVOICE_PDF_TITLE_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_TITLE_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_subject" type="text"
+			   default="invoice"
+			   description="PLG_SOLIDRES_INVOICE_PDF_SUBJECT_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_SUBJECT_LABEL"
+			   />
+        <field name="solidres_invoice_page_format" type="text"
+			   default="A4"
+			   description="PLG_SOLIDRES_INVOICE_PAGE_FORMAT_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PAGE_FORMAT_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_page_orientation" type="text"
+			   default="P"
+			   description="PLG_SOLIDRES_INVOICE_PDF_PAGE_ORIENTATION_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_PAGE_ORIENTATION_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_creator" type="text"
+			   default="hotel"
+			   description="PLG_SOLIDRES_INVOICE_PDF_CREATOR_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_CREATOR_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_author" type="text"
+			   default="hotel"
+			   description="PLG_SOLIDRES_INVOICE_PDF_AUTHOR_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_AUTHOR_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_unit" type="text"
+			   default="mm"
+			   description="PLG_SOLIDRES_INVOICE_PDF_UNIT_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_UNIT_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_margin_header" type="text"
+			   default="5"
+			   description="PLG_SOLIDRES_INVOICE_PDF_MARGIN_HEADER_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_MARGIN_HEADER_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_margin_footer" type="text"
+			   default="false"
+			   description="PLG_SOLIDRES_INVOICE_PDF_MARGIN_FOOTER_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_MARGIN_FOOTER_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_margin_top" type="text"
+			   default="27"
+			   description="PLG_SOLIDRES_INVOICE_PDF_MARGIN_TOP_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_MARGIN_TOP_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_margin_bottom" type="text"
+			   default="25"
+			   description="PLG_SOLIDRES_INVOICE_PDF_MARGIN_BOTTOM_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_MARGIN_BOTTOM_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_margin_left" type="text"
+			   default="15"
+			   description="PLG_SOLIDRES_INVOICE_PDF_MARGIN_LEFT_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_MARGIN_LEFT_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_margin_right" type="text"
+			   default="15"
+			   description="PLG_SOLIDRES_INVOICE_PDF_MARGIN_RIGHT_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_MARGIN_RIGHT_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_font_name_main" type="list"
+			   default="dejavusans"
+			   description="PLG_SOLIDRES_INVOICE_PDF_FONT_NAME_MAIN_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_FONT_NAME_MAIN_LABEL">
+            <option value="courier">courier</option>
+            <option value="dejavusans">dejavusans</option>
+            <option value="freeserif">freeserif</option>
+            <option value="helvetica">helvetica</option>
+            <option value="pdfacourier">pdfacourier</option>
+            <option value="pdfahelvetica">pdfahelvetica</option>
+            <option value="pdfasymbol">pdfasymbol</option>
+            <option value="pdfatimes">pdfatimes</option>
+            <option value="symbol">symbol</option>
+            <option value="times">times</option>
+        </field>
+        <field name="solidres_invoice_pdf_font_size_main" type="text"
+			   default="8"
+			   description="PLG_SOLIDRES_INVOICE_PDF_FONT_SIZE_MAIN_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_FONT_SIZE_MAIN_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_font_name_footer" type="text"
+			   default="false"
+			   description="PLG_SOLIDRES_INVOICE_PDF_FONT_NAME_FOOTER_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_FONT_NAME_FOOTER_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_font_size_footer" type="text"
+			   default="false"
+			   description="PLG_SOLIDRES_INVOICE_PDF_FONT_SIZE_FOOTER_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_FONT_SIZE_FOOTER_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_font_monospaced" type="list"
+			   default="dejavusans"
+			   description="PLG_SOLIDRES_INVOICE_PDF_FONT_MONOSPACED_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_FONT_MONOSPACED_LABEL">
+            <option value="courier">courier</option>
+            <option value="dejavusans">dejavusans</option>
+            <option value="freeserif">freeserif</option>
+            <option value="helvetica">helvetica</option>
+            <option value="pdfacourier">pdfacourier</option>
+            <option value="pdfahelvetica">pdfahelvetica</option>
+            <option value="pdfasymbol">pdfasymbol</option>
+            <option value="pdfatimes">pdfatimes</option>
+            <option value="symbol">symbol</option>
+            <option value="times">times</option>
+        </field>
+        <field name="solidres_invoice_pdf_image_scale_ratio" type="text"
+			   default="1.25"
+			   description="PLG_SOLIDRES_INVOICE_PDF_IMAGE_SCALE_RATIO_DESC"
+			   label="PLG_SOLIDRES_INVOICE_PDF_IMAGE_SCALE_RATIO_LABEL"
+			   />
+        <field name="solidres_invoice_pdf_file_name" type="text"
+               default="voucher"
+               description="PLG_SOLIDRES_INVOICE_PDF_FILE_NAME_DESC"
+               label="PLG_SOLIDRES_INVOICE_PDF_FILE_NAME_LABEL"
+               />
+    </fieldset>
+	<fieldset
+			name="hub"
+			addfieldpath="/administrator/components/com_solidres/models/fields"
+			label="SR_CONFIG_HUB_LABEL"
+			description="SR_CONFIG_HUB_DESC"
+			>
+
+		<field
+				name="hub_url_type"
+				type="list"
+				label="SR_HUB_SOLIDRES_URL_SETTINGS_LABEL"
+				description="SR_HUB_SOLIDRES_URL_SETTINGS_DESC"
+				default="0"
+				filter="uint">
+			<option value="0">SR_HUB_SOLIDRES_URL_SETTING_PLAIN</option>
+			<option value="1">SR_HUB_SOLIDRES_URL_SETTING_CUSTOM</option>
+		</field>
+		<field
+				name="hub_url_custom"
+				type="text"
+				label="SR_HUB_SOLIDRES_URL_CUSTOM_LABEL"
+				description="SR_HUB_SOLIDRES_URL_CUSTOM_DESC"
+				class="input-xxlarge"
+				showon="hub_url_type:1"
+				default="%asset_category_name%/%country%/%asset_name%"/>
+		<field
+				name="facebook_app_id"
+				type="text"
+				label="SR_HUB_SOLIDRES_FACEBOOK_APP_ID_LABEL"
+				description="SR_HUB_SOLIDRES_FACEBOOK_APP_ID_DESC"/>
+		<field
+				name="show_sorting_bar"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="SR_HUB_SHOW_SORTING_BAR_LABEL"
+				description="SR_HUB_SHOW_SORTING_BAR_DESC">
+            <option
+                    value="0">JNO</option>
+			<option
+					value="1">JYES</option>
+		</field>
+
+		<field
+				name="enable_slideshow_search"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="SR_HUB_ENABLE_SLIDESHOW_SEARCH_LABEL"
+				description="SR_HUB_ENABLE_SLIDESHOW_SEARCH_DESC">
+            <option
+                    value="0">JNO</option>
+            <option
+					value="1">JYES</option>
+		</field>
+
+        <field
+                name="number_slideshow_images"
+                type="text"
+                class=""
+                default="3"
+                showon="enable_slideshow_search:1"
+                label="SR_HUB_NUMBER_SLIDESHOW_IMAGES_LABEL"
+                description="SR_HUB_NUMBER_SLIDESHOW_IMAGES_DESC"/>
+
+		<field
+				name="number_viewed_assets"
+				type="text"
+				class=""
+				default="5"
+				label="SR_HUB_NUMBER_VIEWED_ASSETS_LABEL"
+				description="SR_HUB_NUMBER_VIEWED_ASSETS_DESC"/>
+
+		<field
+				name="show_price_filter"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="SR_HUB_SHOW_PRICE_FILTER_LABEL"
+				description="SR_HUB_SHOW_PRICE_FILTER_DESC">
+            <option
+                    value="0">JNO</option>
+            <option
+					value="1">JYES</option>
+		</field>
+
+		<field
+				name="show_rating_filter"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="SR_HUB_SHOW_RATING_FILTER_LABEL"
+				description="SR_HUB_SHOW_RATING_FILTER_DESC">
+            <option
+                    value="0">JNO</option>
+            <option
+					value="1">JYES</option>
+		</field>
+
+		<field
+				name="show_category_filter"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="SR_HUB_SHOW_CATEGORY_FILTER_LABEL"
+				description="SR_HUB_SHOW_CATEGORY_FILTER_DESC">
+            <option
+                    value="0">JNO</option>
+            <option
+					value="1">JYES</option>
+		</field>
+
+		<field
+				name="show_facility_filter"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="SR_HUB_SHOW_FACILITY_FILTER_LABEL"
+				description="SR_HUB_SHOW_FACILITY_FILTER_DESC">
+            <option
+                    value="0">JNO</option>
+            <option
+					value="1">JYES</option>
+		</field>
+
+		<field
+				name="show_theme_filter"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="SR_HUB_SHOW_THEME_FILTER_LABEL"
+				description="SR_HUB_SHOW_THEME_FILTER_DESC">
+            <option
+                    value="0">JNO</option>
+            <option
+					value="1">JYES</option>
+		</field>
+
+		<field
+				name="access_denied_msg_location"
+				type="list"
+				class=""
+				default="0"
+				label="SR_HUB_ACCESS_DENIED_MSG_LOCATION_LABEL"
+				description="SR_HUB_ACCESS_DENIED_MSG_LOCATION_DESC">
+			<option
+					value="0">SR_HUB_ACCESS_DENIED_MSG_LOCATION_ASSET_PAGE</option>
+			<option
+					value="1">SR_HUB_ACCESS_DENIED_MSG_LOCATION_SEARCH_PAGE</option>
+		</field>
+
+        <field
+                name="show_wishlist"
+                type="radio"
+                class="btn-group"
+                default="1"
+                label="SR_HUB_SHOW_WISHLIST_LABEL"
+                description="SR_HUB_SHOW_WISHLIST_DESC">
+            <option
+                    value="0">JNO</option>
+            <option
+                    value="1">JYES</option>
+        </field>
+
+        <field
+                name="show_sharing"
+                type="radio"
+                class="btn-group"
+                default="1"
+                label="SR_HUB_SHOW_SHARING_LABEL"
+                description="SR_HUB_SHOW_SHARING_DESC">
+            <option
+                    value="0">JNO</option>
+            <option
+                    value="1">JYES</option>
+        </field>
+
+        <field
+                name="google_map_static_api_key"
+                type="text"
+                default=""
+                label="SR_FIELD_GOOGLE_MAP_STATIC_API_LABEL"
+                description="SR_FIELD_GOOGLE_MAP_STATIC_API_DESC" />
+
+		<field
+				type="spacer"
+				hr="true"
+				/>
+
+		<field
+				type="radio"
+				name="enableSubscription"
+				label="SR_FIELD_ENABLE_SUBSCRIPTION"
+				default="1"
+				class="btn-group"
+				>
+            <option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+        <field
+                type="countrytaxlevel"
+                name="taxCountry"
+                state="taxCountryState"
+                label="SR_FIELD_SUBSCRIPTION_TAX_COUNTRY_LABEL"
+                showon="enableSubscription:1"
+        />
+        <field
+                type="list"
+                name="taxCountryState"
+                label="SR_FIELD_SUBSCRIPTION_TAX_GEOSTATE_LABEL"
+                showon="enableSubscription:1"
+        />
+
+		<field
+				type="radio"
+				name="enableCommission"
+				label="SR_FIELD_ENABLE_COMMISSION"
+				default="0"
+				class="btn-group"
+				>
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+		</field>
+        <field
+                type="radio"
+                name="assetApproval"
+                label="SR_FIELD_ASSET_SUBMISSION_APPROVAL"
+                default="0"
+                class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+		<field
+				type="text"
+				name="notifyCommissionEditEmail"
+				label="SR_FIELD_NOTIFY_COMMISSION_EDIT_EMAIL"
+				description="SR_FIELD_NOTIFY_COMMISSION_EDIT_EMAIL_DESC"
+				default=""
+				showon="enableCommission:1"
+				/>
+		<field
+				type="text"
+				name="commissionEmailFacebook"
+				label="SR_FIELD_COMMISSION_EMAIL_FACEBOOK"
+				showon="enableCommission:1"
+				/>
+		<field
+				type="text"
+				name="commissionEmailTwitter"
+				label="SR_FIELD_COMMISSION_EMAIL_TWITTER"
+				showon="enableCommission:1"
+				/>
+		<field
+				type="text"
+				name="commissionEmailGPlus"
+				label="SR_FIELD_COMMISSION_EMAIL_GOOGLE_PLUS"
+				showon="enableCommission:1"
+				/>
+		<field
+				type="media"
+				name="commissionEmailLogo"
+				label="SR_FIELD_COMMISSION_EMAIL_LOGO"
+				showon="enableCommission:1"
+				/>
+		<field
+				type="text"
+				name="commissionContactAddress"
+				label="SR_FIELD_COMMISSION_EMAIL_CONTACT_ADDRESS"
+				showon="enableCommission:1"
+				/>
+		<field
+				type="text"
+				name="commissionContactPhone"
+				label="SR_FIELD_COMMISSION_EMAIL_CONTACT_PHONE"
+				showon="enableCommission:1"
+				/>
+		<field
+				type="text"
+				name="commissionContactMobile"
+				label="SR_FIELD_COMMISSION_EMAIL_CONTACT_MOBILE"
+				showon="enableCommission:1"
+				/>
+		<field
+				type="text"
+				name="commissionContactEmail"
+				label="SR_FIELD_COMMISSION_EMAIL_CONTACT_Email"
+				showon="enableCommission:1"
+				/>
+
+	</fieldset>
+    <fieldset
+            name="reservation"
+            addfieldpath="/administrator/components/com_solidres/models/fields"
+            label="SR_CONFIG_RESERVATION_LABEL">
+        <field
+                name="rescode_custom_format"
+                type="text"
+                label="SR_FIELD_RESCODE_CUSTOM_FORMAT_LABEL"
+                description="SR_FIELD_RESCODE_CUSTOM_FORMAT_DESC"
+                default="{RANDOM}"
+                filter="string"
+                class="input-xxlarge"
+        />
+        <field
+                type="hint"
+                description="SR_FIELD_RESCODE_CUSTOM_FORMAT_HINT"
+                class="input-xxlarge"
+        />
+    </fieldset>
+	<fieldset name="feedback_score" label="SR_CONFIG_FEEDBACKS">
+        <field
+				type="integer"
+				name="feedback_max_scores"
+				label="SR_CONFIG_FEEDBACKS_MAX_SCORES"
+				first="1"
+				last="100"
+				step="1"
+				default="10"/>
+        <field
+				type="integer"
+				name="feedback_default_score"
+				label="SR_CONFIG_FEEDBACKS_DEFAULT_SCORE"
+				first="1"
+				last="100"
+				step="1"
+				default="5"/>
+   	</fieldset>
+</config>

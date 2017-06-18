@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field
+                name="search"
+                type="text"
+                label="SR_SEARCH_BY_CODE"
+                description="SR_SEARCH_BY_CODE"
+                hint="SR_SEARCH_BY_CODE"
+                class="js-stools-search-string form-control"
+                />
+        <field
+                name="reservation_asset_id"
+                type="reservationasset"
+                label="SR_FILTER_RESERVATION_ASSET_SELECT"
+                onchange="this.form.submit();"
+                />
+        <field
+                name="state"
+                type="reservationstatus"
+                label="SR_FILTER_RESERVATION_STATUS_SELECT"
+                onchange="this.form.submit();"
+                />
+        <field
+                name="payment_status"
+                type="paymentstatus"
+                label="SR_RESERVATION_PAYMENT_STATUS_SELECT"
+                onchange="this.form.submit();"
+                />
+        <field
+                name="customer_fullname"
+                type="text"
+                title="SR_SEARCH_BY_CUSTOMER"
+                hint="SR_SEARCH_BY_CUSTOMER"
+                onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }"
+                />
+        <field
+                name="checkin_from"
+                type="calendar"
+                label="SR_RESERVATION_FILTER_CHECK_IN_FROM"
+                format="%d-%m-%Y"
+                filter="user_utc"
+                hint="SR_RESERVATION_FILTER_CHECK_IN_FROM"
+                />
+        <field
+                name="checkin_to"
+                type="calendar"
+                label="SR_RESERVATION_FILTER_CHECK_IN_TO"
+                format="%d-%m-%Y"
+                filter="user_utc"
+                hint="SR_RESERVATION_FILTER_CHECK_IN_TO"
+                />
+        <field
+                name="checkout_from"
+                type="calendar"
+                label="SR_RESERVATION_FILTER_CHECK_OUT_FROM"
+                format="%d-%m-%Y"
+                filter="user_utc"
+                hint="SR_RESERVATION_FILTER_CHECK_OUT_FROM"
+                />
+        <field
+                name="checkout_to"
+                type="calendar"
+                label="SR_RESERVATION_FILTER_CHECK_OUT_TO"
+                format="%d-%m-%Y"
+                filter="user_utc"
+                hint="SR_RESERVATION_FILTER_CHECK_OUT_TO"
+                />
+    </fields>
+    <fields name="list">
+        <field
+                name="limit"
+                type="limitbox"
+                class="input-mini"
+                default="25"
+                label="SR_LIST_LIMIT"
+                description="SR_LIST_LIMIT_DESC"
+                onchange="this.form.submit();"
+                />
+    </fields>
+</form>
